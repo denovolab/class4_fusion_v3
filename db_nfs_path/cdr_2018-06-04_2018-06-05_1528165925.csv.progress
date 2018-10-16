@@ -1,0 +1,20 @@
+  adding: 1005_1528165926/20180604.csv (deflated 81%)
+  adding: 1005_1528165926/20180605.csv (deflated 70%)
+/opt/btb/teleinx/Class4/etc/dnl_softswitch.ini
+chmod 777 failed
+start 2018-06-04 00:00:00  end 2018-06-05 23:59:59
+start 2018-06-04 00:00:00  end 2018-06-05 00:00:00
+/opt/btb/teleinx/Class4/db_nfs_path/cdr_download/1005_1528165926
+2018-06-04 00:00:00
+COPY (select trunk_id_termination,origination_source_number,pdd,termination_destination_host_name,termination_remote_payload_ip_address,time,routing_digits  from   client_cdr20180604                where   time  between  '2018-06-04 00:00:00 +00'  and  '2018-06-05 23:59:59 +00'             	          	       	 and release_cause_from_protocol_stack  like'%5000%'            	               	          and
+(exists(SELECT id FROM users_limit WHERE user_id = 1 AND client_id=client_cdr20180604.ingress_client_id) OR exists 
+(SELECT users.user_id FROM users LEFT JOIN sys_role ON users.role_id = sys_role.role_id WHERE users.user_id = 1 
+and (role_name = 'admin' or sys_role.view_all = true)))     ) TO STDOUT WITH CSV HEADER 
+2018-06-05 00:00:00
+COPY (select trunk_id_termination,origination_source_number,pdd,termination_destination_host_name,termination_remote_payload_ip_address,time,routing_digits  from   client_cdr20180605                where   time  between  '2018-06-04 00:00:00 +00'  and  '2018-06-05 23:59:59 +00'             	          	       	 and release_cause_from_protocol_stack  like'%5000%'            	               	          and
+(exists(SELECT id FROM users_limit WHERE user_id = 1 AND client_id=client_cdr20180605.ingress_client_id) OR exists 
+(SELECT users.user_id FROM users LEFT JOIN sys_role ON users.role_id = sys_role.role_id WHERE users.user_id = 1 
+and (role_name = 'admin' or sys_role.view_all = true)))     ) TO STDOUT WITH CSV HEADER 
+zip 1005f17c289e-878e-4959-8ac6-45741ca818ac.zip 1005_1528165926/*
+/opt/btb/teleinx/Class4/db_nfs_path/cdr_download/1005_1528165926
+2

@@ -1,0 +1,20 @@
+  adding: 944_1518641587/20180213.csv (deflated 86%)
+  adding: 944_1518641587/20180214.csv (deflated 87%)
+/opt/btb/teleinx/Class4/etc/dnl_softswitch.ini
+chmod 777 failed
+start 2018-02-13 00:00:00  end 2018-02-14 23:59:59
+start 2018-02-13 00:00:00  end 2018-02-14 00:00:00
+/opt/btb/teleinx/Class4/db_nfs_path/cdr_download/944_1518641587
+2018-02-13 00:00:00
+COPY (select call_duration,trunk_id_termination,egress_cost,egress_rate,origination_source_number,first_release_dialogue,orig_call_duration,pdd,release_cause_from_protocol_stack,termination_destination_number,termination_destination_host_name,termination_remote_payload_ip_address,time,routing_digits  from   client_cdr20180213                where   time  between  '2018-02-13 00:00:00 +00'  and  '2018-02-14 23:59:59 +00'             	          	       	    and case  when call_duration is null then 0  else call_duration end>0         	               	      and ingress_client_id=268     and
+(exists(SELECT id FROM users_limit WHERE user_id = 1 AND client_id=client_cdr20180213.ingress_client_id) OR exists 
+(SELECT users.user_id FROM users LEFT JOIN sys_role ON users.role_id = sys_role.role_id WHERE users.user_id = 1 
+and (role_name = 'admin' or sys_role.view_all = true)))     ) TO STDOUT WITH CSV HEADER 
+2018-02-14 00:00:00
+COPY (select call_duration,trunk_id_termination,egress_cost,egress_rate,origination_source_number,first_release_dialogue,orig_call_duration,pdd,release_cause_from_protocol_stack,termination_destination_number,termination_destination_host_name,termination_remote_payload_ip_address,time,routing_digits  from   client_cdr20180214                where   time  between  '2018-02-13 00:00:00 +00'  and  '2018-02-14 23:59:59 +00'             	          	       	    and case  when call_duration is null then 0  else call_duration end>0         	               	      and ingress_client_id=268     and
+(exists(SELECT id FROM users_limit WHERE user_id = 1 AND client_id=client_cdr20180214.ingress_client_id) OR exists 
+(SELECT users.user_id FROM users LEFT JOIN sys_role ON users.role_id = sys_role.role_id WHERE users.user_id = 1 
+and (role_name = 'admin' or sys_role.view_all = true)))     ) TO STDOUT WITH CSV HEADER 
+zip 9443e191d0c-49c7-463b-a617-bae50b13d6df.zip 944_1518641587/*
+/opt/btb/teleinx/Class4/db_nfs_path/cdr_download/944_1518641587
+2

@@ -1,0 +1,14 @@
+  adding: 946_1519138682/20180219.csv (deflated 86%)
+/opt/btb/teleinx/Class4/etc/dnl_softswitch.ini
+chmod 777 failed
+start 2018-02-19 00:00:00  end 2018-02-19 23:59:59
+start 2018-02-19 00:00:00  end 2018-02-19 23:59:59
+/opt/btb/teleinx/Class4/db_nfs_path/cdr_download/946_1519138682
+2018-02-19 00:00:00
+COPY (select trunk_id_origination,ingress_client_bill_time,ingress_client_cost,ingress_client_rate,origination_destination_number,origination_source_number,time  from   client_cdr20180219                where   time  between  '2018-02-19 00:00:00 +00'  and  '2018-02-19 23:59:59 +00'             	          	       	    and case  when call_duration is null then 0  else call_duration end>0         	               	      and ingress_client_id=472     and
+(exists(SELECT id FROM users_limit WHERE user_id = 1 AND client_id=client_cdr20180219.ingress_client_id) OR exists 
+(SELECT users.user_id FROM users LEFT JOIN sys_role ON users.role_id = sys_role.role_id WHERE users.user_id = 1 
+and (role_name = 'admin' or sys_role.view_all = true)))     ) TO STDOUT WITH CSV HEADER 
+zip 9461c326545-41f0-421f-8c43-ef7fd36e3061.zip 946_1519138682/*
+/opt/btb/teleinx/Class4/db_nfs_path/cdr_download/946_1519138682
+1

@@ -1,0 +1,86 @@
+Array
+(
+    [mc_gross] => 70.00
+    [invoice] => 5b9adba864733
+    [protection_eligibility] => Eligible
+    [address_status] => confirmed
+    [payer_id] => HAVGJBBKPAC9U
+    [address_street] => Calle Corazon de jesus 12
+    [payment_date] => 14:51:02 Sep 13, 2018 PDT
+    [payment_status] => Completed
+    [charset] => UTF-8
+    [address_zip] => 10051
+    [first_name] => Richard
+    [mc_fee] => 3.38
+    [address_country_code] => DO
+    [address_name] => Martinez Publicidad
+    [notify_version] => 3.9
+    [custom] => 
+    [payer_status] => verified
+    [business] => finance@teleinx.com
+    [address_country] => Dominican Republic
+    [address_city] => Santo Domingo
+    [quantity] => 1
+    [verify_sign] => AmiTgpNvTDdX5jomwpGkQcyBPUpeA6NdvjAzzFHWM5.wZBaB5F4BeeHQ
+    [payer_email] => brinquitostv@gmail.com
+    [txn_id] => 67551511AG8816025
+    [payment_type] => instant
+    [payer_business_name] => Martinez Publicidad
+    [last_name] => Martinez
+    [address_state] => Santo Domingo
+    [receiver_email] => finance@teleinx.com
+    [payment_fee] => 3.38
+    [shipping_discount] => 0.00
+    [insurance_amount] => 0.00
+    [receiver_id] => B7YHW5ZYNPYN2
+    [txn_type] => web_accept
+    [item_name] => Online Payment
+    [discount] => 0.00
+    [mc_currency] => USD
+    [item_number] => 
+    [residence_country] => DO
+    [shipping_method] => Default
+    [transaction_subject] => 
+    [payment_gross] => 70.00
+    [ipn_track_id] => a70cbbafb6620
+)
+
+
+Array
+(
+    [0] => Array
+        (
+            [0] => Array
+                (
+                    [chargetotal] => 70
+                    [method] => 0
+                    [cardnumber] => 
+                    [cardexpmonth] => 
+                    [cardexpyear] => 
+                    [created_time] => 2018-09-13 21:50:29
+                    [modified_time] => 2018-09-13 21:50:29
+                    [error] => 
+                    [confirmed] => 
+                    [client_id] => 462
+                    [fee] => 
+                    [status] => 0
+                    [id] => 5626
+                    [invoice_id] => 5b9adba864733
+                    [par_id] => 
+                    [address1] => 
+                    [address2] => 
+                    [city] => 
+                    [state_province] => 
+                    [zip_code] => 
+                    [country] => 
+                    [credit_card_type] => 
+                    [paypal_id] => 
+                    [transaction_id] => 
+                    [return_code] => 
+                )
+
+        )
+
+)
+
+

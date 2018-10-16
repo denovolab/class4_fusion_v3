@@ -1,0 +1,8 @@
+/opt/btb/teleinx/Class4/etc/dnl_softswitch.ini
+chmod 777 failed
+start 2018-07-11 00:00:00  end 2018-07-11 23:59:59
+start 2018-07-11 00:00:00  end 2018-07-11 00:00:00
+/opt/btb/teleinx/Class4/db_nfs_path/cdr_download/1035_1531315587
+2018-07-11 00:00:00
+COPY (select trunk_id_origination,origination_source_number,origination_destination_number,ingress_client_bill_time,round(ingress_client_cost / (SELECT rate FROM currency_updates WHERE currency_id = client_cdr20180711.ingress_client_currency_id) * , 5) as ingress_client_cost,time  from   client_cdr20180711                where   time  between  '2018-07-11 00:00:00 +00'  and  '2018-07-11 23:59:59 +00'             	          	       	            	  and (ingress_client_id  = 499)              	               ) TO STDOUT WITH CSV HEADER 
+<class 'psycopg2.DatabaseError'>

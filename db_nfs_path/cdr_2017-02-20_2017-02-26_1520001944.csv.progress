@@ -1,0 +1,8 @@
+/opt/btb/teleinx/Class4/etc/dnl_softswitch.ini
+chmod 777 failed
+start 2017-02-20 00:00:00  end 2017-02-26 23:59:59
+start 2017-07-29 00:00:00  end 2017-02-26 23:59:59
+/opt/btb/teleinx/Class4/db_nfs_path/cdr_download/660_1520001944
+2017-02-26 23:59:59
+COPY (None) TO STDOUT WITH CSV HEADER 
+<class 'psycopg2.DatabaseError'>

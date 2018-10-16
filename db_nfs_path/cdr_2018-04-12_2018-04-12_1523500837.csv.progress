@@ -1,0 +1,62 @@
+  adding: 992_1523500838/20180412.csv (deflated 51%)
+/opt/btb/teleinx/Class4/etc/dnl_softswitch.ini
+chmod 777 failed
+start 2018-04-12 08:00:00  end 2018-04-12 12:59:59
+start 2018-04-12 08:00:00  end 2018-04-12 00:00:00
+/opt/btb/teleinx/Class4/db_nfs_path/cdr_download/992_1523500838
+2018-04-12 00:00:00
+COPY (select trunk_id_termination,trunk_id_origination,ingress_client_bill_time,origination_destination_number,origination_source_number,first_release_dialogue,pdd,case  release_cause
+	 	
+	 	when    0    then   'Unknown Exception'
+                when    1     then   'System CPS Limit Exceeded'
+                when    2     then   'SYSTEM_CPS System Limit Exceeded'
+                when    3     then   'Unauthorized IP Address'
+                when    4     then   ' No Ingress Resource Found'
+		when    5     then   'No Product Found '
+		when    6     then   'Trunk Limit Call Exceeded'
+		when    7     then   'Trunk Limit CPS Exceeded'
+		when    8     then   'IP Limit  CAP Exceeded'
+		when    9     then   'IP Limit CPS Exceeded 	'
+		when   10    then   'Invalid Codec Negotiation'
+		when   11    then   'Block due to LRN'
+		when   12 			then  'Ingress Rate Not Found'  
+		when   13 			then  ' Egress Trunk Not Found'  
+		when   14 			then  'Egress Returns 404'  
+		when   15 			then  'Egress Returns 486'  
+		when   16 			then  'Egress Returns 487'  
+		when   17 			then  'Egress Returns 200'  
+		when   18 			then  'All Egress Unavailable'  
+		when   19 			then  'Normal hang up' 
+		when   20 			then  'Ingress Resource disabled'   
+		when   21 			then  'Zero Balance'   
+		when   22 			then  'No Route Found'   
+		when   23 			then  'Invalid Prefix'   
+		when   24 			then  'Ingress Rate Missing'
+		when   25                     then 'Invalid Codec Negotiation'
+		when   26                     then 'No Codec Found'
+		when   27                     then 'All Egress Failed'
+		when   28                     then 'LRN Response Missing'
+		when   29    then 'Carrier Call Limit Exceeded'
+		when   30    then 'Carrier CPS Limit Exceeded'
+		when   31   then 'Rejected Due to Host Alert'
+		when   32   then 'Rejected Due to Trunk Alert'
+		when   33   then 'H323 Not Supported'
+		when   34   then '180 Negotiation Failure'
+		when   35   then '183 Negotiation Failute'
+		when   36  then '200 Negotiation Failure'
+		when   37  then 'Block LRN with Higher Rate'
+                when   38 then 'Ingress Block ANI'
+                when   39 then 'Ingress Block DNIS'
+                when   40 then 'Ingress Block ALL'
+                when   41 then 'Global Block ANI'
+                when   42 then 'Global Block DNIS'
+                when   43 then 'Global Block ALL'
+                when   44 then 'T38 Reject'
+		else    'other'  end  as
+		release_cause,release_cause_from_protocol_stack,case when is_final_call = 0 then '-' else binary_value_of_release_cause_from_protocol_stack end as binary_value_of_release_cause_from_protocol_stack,termination_remote_payload_ip_address,time  from   client_cdr20180412                where   time  between  '2018-04-12 08:00:00 +00'  and  '2018-04-12 12:59:59 +00'             	          	       	            	               	          and
+(exists(SELECT id FROM users_limit WHERE user_id = 222 AND client_id=client_cdr20180412.ingress_client_id) OR exists 
+(SELECT users.user_id FROM users LEFT JOIN sys_role ON users.role_id = sys_role.role_id WHERE users.user_id = 222 
+and (role_name = 'admin' or sys_role.view_all = true)))     ) TO STDOUT WITH CSV HEADER 
+zip 992ad8552fc-5050-4d27-a9e6-bc43d6454ba6.zip 992_1523500838/*
+/opt/btb/teleinx/Class4/db_nfs_path/cdr_download/992_1523500838
+1

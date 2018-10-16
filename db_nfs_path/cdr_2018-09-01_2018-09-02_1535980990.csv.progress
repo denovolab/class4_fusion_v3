@@ -1,0 +1,14 @@
+  adding: 1059_1535980990/20180901.csv (deflated 88%)
+  adding: 1059_1535980990/20180902.csv (deflated 35%)
+/opt/btb/teleinx/Class4/etc/dnl_softswitch.ini
+chmod 777 failed
+start 2018-09-01 00:00:00  end 2018-09-02 23:59:59
+start 2018-09-01 00:00:00  end 2018-09-02 23:59:59
+/opt/btb/teleinx/Class4/db_nfs_path/cdr_download/1059_1535980990
+2018-09-01 00:00:00
+COPY (select trunk_id_origination,origination_source_number,origination_destination_number,ingress_client_bill_time,time  from   client_cdr20180901                where   time  between  '2018-09-01 00:00:00 +00'  and  '2018-09-02 23:59:59 +00'             	          	       	            	  and (ingress_client_id  = 499)              	               ) TO STDOUT WITH CSV HEADER 
+2018-09-02 00:00:00
+COPY (select trunk_id_origination,origination_source_number,origination_destination_number,ingress_client_bill_time,time  from   client_cdr20180902                where   time  between  '2018-09-01 00:00:00 +00'  and  '2018-09-02 23:59:59 +00'             	          	       	            	  and (ingress_client_id  = 499)              	               ) TO STDOUT WITH CSV HEADER 
+zip 1059dd326701-173a-4d5b-8aae-5620fe548720.zip 1059_1535980990/*
+/opt/btb/teleinx/Class4/db_nfs_path/cdr_download/1059_1535980990
+2

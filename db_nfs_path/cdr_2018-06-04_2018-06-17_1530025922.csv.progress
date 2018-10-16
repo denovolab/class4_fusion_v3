@@ -1,0 +1,92 @@
+/opt/btb/teleinx/Class4/etc/dnl_softswitch.ini
+chmod 777 failed
+start 2018-06-04 03:00:00  end 2018-06-17 23:59:59
+start 2018-06-04 03:00:00  end 2018-06-17 23:59:59
+/opt/btb/teleinx/Class4/db_nfs_path/cdr_download/1015_1530025923
+2018-06-04 03:00:00
+COPY (select trunk_id_termination,egress_bill_time,egress_cost,egress_rate,trunk_id_origination,ingress_client_bill_time,ingress_client_cost,ingress_client_rate,origination_destination_number,origination_source_number,first_release_dialogue,release_cause_from_protocol_stack,case when is_final_call = 0 then '-' else binary_value_of_release_cause_from_protocol_stack end as binary_value_of_release_cause_from_protocol_stack  from   client_cdr20180604                where   time  between  '2018-06-04 03:00:00 +00'  and  '2018-06-17 23:59:59 +00'             	          	       	    and case  when call_duration is null then 0  else call_duration end>0         	               	      and ingress_client_id=268     and
+(exists(SELECT id FROM users_limit WHERE user_id = 1 AND client_id=client_cdr20180604.ingress_client_id) OR exists 
+(SELECT users.user_id FROM users LEFT JOIN sys_role ON users.role_id = sys_role.role_id WHERE users.user_id = 1 
+and (role_name = 'admin' or sys_role.view_all = true)))     ) TO STDOUT WITH CSV HEADER 
+2018-06-05 03:00:00
+COPY (select trunk_id_termination,egress_bill_time,egress_cost,egress_rate,trunk_id_origination,ingress_client_bill_time,ingress_client_cost,ingress_client_rate,origination_destination_number,origination_source_number,first_release_dialogue,release_cause_from_protocol_stack,case when is_final_call = 0 then '-' else binary_value_of_release_cause_from_protocol_stack end as binary_value_of_release_cause_from_protocol_stack  from   client_cdr20180605                where   time  between  '2018-06-04 03:00:00 +00'  and  '2018-06-17 23:59:59 +00'             	          	       	    and case  when call_duration is null then 0  else call_duration end>0         	               	      and ingress_client_id=268     and
+(exists(SELECT id FROM users_limit WHERE user_id = 1 AND client_id=client_cdr20180605.ingress_client_id) OR exists 
+(SELECT users.user_id FROM users LEFT JOIN sys_role ON users.role_id = sys_role.role_id WHERE users.user_id = 1 
+and (role_name = 'admin' or sys_role.view_all = true)))     ) TO STDOUT WITH CSV HEADER 
+2018-06-06 03:00:00
+COPY (select trunk_id_termination,egress_bill_time,egress_cost,egress_rate,trunk_id_origination,ingress_client_bill_time,ingress_client_cost,ingress_client_rate,origination_destination_number,origination_source_number,first_release_dialogue,release_cause_from_protocol_stack,case when is_final_call = 0 then '-' else binary_value_of_release_cause_from_protocol_stack end as binary_value_of_release_cause_from_protocol_stack  from   client_cdr20180606                where   time  between  '2018-06-04 03:00:00 +00'  and  '2018-06-17 23:59:59 +00'             	          	       	    and case  when call_duration is null then 0  else call_duration end>0         	               	      and ingress_client_id=268     and
+(exists(SELECT id FROM users_limit WHERE user_id = 1 AND client_id=client_cdr20180606.ingress_client_id) OR exists 
+(SELECT users.user_id FROM users LEFT JOIN sys_role ON users.role_id = sys_role.role_id WHERE users.user_id = 1 
+and (role_name = 'admin' or sys_role.view_all = true)))     ) TO STDOUT WITH CSV HEADER 
+2018-06-07 03:00:00
+COPY (select trunk_id_termination,egress_bill_time,egress_cost,egress_rate,trunk_id_origination,ingress_client_bill_time,ingress_client_cost,ingress_client_rate,origination_destination_number,origination_source_number,first_release_dialogue,release_cause_from_protocol_stack,case when is_final_call = 0 then '-' else binary_value_of_release_cause_from_protocol_stack end as binary_value_of_release_cause_from_protocol_stack  from   client_cdr20180607                where   time  between  '2018-06-04 03:00:00 +00'  and  '2018-06-17 23:59:59 +00'             	          	       	    and case  when call_duration is null then 0  else call_duration end>0         	               	      and ingress_client_id=268     and
+(exists(SELECT id FROM users_limit WHERE user_id = 1 AND client_id=client_cdr20180607.ingress_client_id) OR exists 
+(SELECT users.user_id FROM users LEFT JOIN sys_role ON users.role_id = sys_role.role_id WHERE users.user_id = 1 
+and (role_name = 'admin' or sys_role.view_all = true)))     ) TO STDOUT WITH CSV HEADER 
+2018-06-08 03:00:00
+COPY (select trunk_id_termination,egress_bill_time,egress_cost,egress_rate,trunk_id_origination,ingress_client_bill_time,ingress_client_cost,ingress_client_rate,origination_destination_number,origination_source_number,first_release_dialogue,release_cause_from_protocol_stack,case when is_final_call = 0 then '-' else binary_value_of_release_cause_from_protocol_stack end as binary_value_of_release_cause_from_protocol_stack  from   client_cdr20180608                where   time  between  '2018-06-04 03:00:00 +00'  and  '2018-06-17 23:59:59 +00'             	          	       	    and case  when call_duration is null then 0  else call_duration end>0         	               	      and ingress_client_id=268     and
+(exists(SELECT id FROM users_limit WHERE user_id = 1 AND client_id=client_cdr20180608.ingress_client_id) OR exists 
+(SELECT users.user_id FROM users LEFT JOIN sys_role ON users.role_id = sys_role.role_id WHERE users.user_id = 1 
+and (role_name = 'admin' or sys_role.view_all = true)))     ) TO STDOUT WITH CSV HEADER 
+2018-06-09 03:00:00
+COPY (select trunk_id_termination,egress_bill_time,egress_cost,egress_rate,trunk_id_origination,ingress_client_bill_time,ingress_client_cost,ingress_client_rate,origination_destination_number,origination_source_number,first_release_dialogue,release_cause_from_protocol_stack,case when is_final_call = 0 then '-' else binary_value_of_release_cause_from_protocol_stack end as binary_value_of_release_cause_from_protocol_stack  from   client_cdr20180609                where   time  between  '2018-06-04 03:00:00 +00'  and  '2018-06-17 23:59:59 +00'             	          	       	    and case  when call_duration is null then 0  else call_duration end>0         	               	      and ingress_client_id=268     and
+(exists(SELECT id FROM users_limit WHERE user_id = 1 AND client_id=client_cdr20180609.ingress_client_id) OR exists 
+(SELECT users.user_id FROM users LEFT JOIN sys_role ON users.role_id = sys_role.role_id WHERE users.user_id = 1 
+and (role_name = 'admin' or sys_role.view_all = true)))     ) TO STDOUT WITH CSV HEADER 
+2018-06-10 03:00:00
+COPY (select trunk_id_termination,egress_bill_time,egress_cost,egress_rate,trunk_id_origination,ingress_client_bill_time,ingress_client_cost,ingress_client_rate,origination_destination_number,origination_source_number,first_release_dialogue,release_cause_from_protocol_stack,case when is_final_call = 0 then '-' else binary_value_of_release_cause_from_protocol_stack end as binary_value_of_release_cause_from_protocol_stack  from   client_cdr20180610                where   time  between  '2018-06-04 03:00:00 +00'  and  '2018-06-17 23:59:59 +00'             	          	       	    and case  when call_duration is null then 0  else call_duration end>0         	               	      and ingress_client_id=268     and
+(exists(SELECT id FROM users_limit WHERE user_id = 1 AND client_id=client_cdr20180610.ingress_client_id) OR exists 
+(SELECT users.user_id FROM users LEFT JOIN sys_role ON users.role_id = sys_role.role_id WHERE users.user_id = 1 
+and (role_name = 'admin' or sys_role.view_all = true)))     ) TO STDOUT WITH CSV HEADER 
+2018-06-11 03:00:00
+COPY (select trunk_id_termination,egress_bill_time,egress_cost,egress_rate,trunk_id_origination,ingress_client_bill_time,ingress_client_cost,ingress_client_rate,origination_destination_number,origination_source_number,first_release_dialogue,release_cause_from_protocol_stack,case when is_final_call = 0 then '-' else binary_value_of_release_cause_from_protocol_stack end as binary_value_of_release_cause_from_protocol_stack  from   client_cdr20180611                where   time  between  '2018-06-04 03:00:00 +00'  and  '2018-06-17 23:59:59 +00'             	          	       	    and case  when call_duration is null then 0  else call_duration end>0         	               	      and ingress_client_id=268     and
+(exists(SELECT id FROM users_limit WHERE user_id = 1 AND client_id=client_cdr20180611.ingress_client_id) OR exists 
+(SELECT users.user_id FROM users LEFT JOIN sys_role ON users.role_id = sys_role.role_id WHERE users.user_id = 1 
+and (role_name = 'admin' or sys_role.view_all = true)))     ) TO STDOUT WITH CSV HEADER   adding: 1015_1530025923/20180604.csv (deflated 94%)
+  adding: 1015_1530025923/20180605.csv (deflated 93%)
+  adding: 1015_1530025923/20180606.csv (deflated 90%)
+  adding: 1015_1530025923/20180607.csv (deflated 92%)
+  adding: 1015_1530025923/20180608.csv (deflated 91%)
+  adding: 1015_1530025923/20180609.csv (deflated 53%)
+  adding: 1015_1530025923/20180610.csv (deflated 78%)
+  adding: 1015_1530025923/20180611.csv (deflated 92%)
+  adding: 1015_1530025923/20180612.csv (deflated 92%)
+  adding: 1015_1530025923/20180613.csv (deflated 93%)
+  adding: 1015_1530025923/20180614.csv (deflated 88%)
+  adding: 1015_1530025923/20180615.csv (deflated 78%)
+  adding: 1015_1530025923/20180616.csv (deflated 81%)
+  adding: 1015_1530025923/20180617.csv (deflated 84%)
+
+2018-06-12 03:00:00
+COPY (select trunk_id_termination,egress_bill_time,egress_cost,egress_rate,trunk_id_origination,ingress_client_bill_time,ingress_client_cost,ingress_client_rate,origination_destination_number,origination_source_number,first_release_dialogue,release_cause_from_protocol_stack,case when is_final_call = 0 then '-' else binary_value_of_release_cause_from_protocol_stack end as binary_value_of_release_cause_from_protocol_stack  from   client_cdr20180612                where   time  between  '2018-06-04 03:00:00 +00'  and  '2018-06-17 23:59:59 +00'             	          	       	    and case  when call_duration is null then 0  else call_duration end>0         	               	      and ingress_client_id=268     and
+(exists(SELECT id FROM users_limit WHERE user_id = 1 AND client_id=client_cdr20180612.ingress_client_id) OR exists 
+(SELECT users.user_id FROM users LEFT JOIN sys_role ON users.role_id = sys_role.role_id WHERE users.user_id = 1 
+and (role_name = 'admin' or sys_role.view_all = true)))     ) TO STDOUT WITH CSV HEADER 
+2018-06-13 03:00:00
+COPY (select trunk_id_termination,egress_bill_time,egress_cost,egress_rate,trunk_id_origination,ingress_client_bill_time,ingress_client_cost,ingress_client_rate,origination_destination_number,origination_source_number,first_release_dialogue,release_cause_from_protocol_stack,case when is_final_call = 0 then '-' else binary_value_of_release_cause_from_protocol_stack end as binary_value_of_release_cause_from_protocol_stack  from   client_cdr20180613                where   time  between  '2018-06-04 03:00:00 +00'  and  '2018-06-17 23:59:59 +00'             	          	       	    and case  when call_duration is null then 0  else call_duration end>0         	               	      and ingress_client_id=268     and
+(exists(SELECT id FROM users_limit WHERE user_id = 1 AND client_id=client_cdr20180613.ingress_client_id) OR exists 
+(SELECT users.user_id FROM users LEFT JOIN sys_role ON users.role_id = sys_role.role_id WHERE users.user_id = 1 
+and (role_name = 'admin' or sys_role.view_all = true)))     ) TO STDOUT WITH CSV HEADER 
+2018-06-14 03:00:00
+COPY (select trunk_id_termination,egress_bill_time,egress_cost,egress_rate,trunk_id_origination,ingress_client_bill_time,ingress_client_cost,ingress_client_rate,origination_destination_number,origination_source_number,first_release_dialogue,release_cause_from_protocol_stack,case when is_final_call = 0 then '-' else binary_value_of_release_cause_from_protocol_stack end as binary_value_of_release_cause_from_protocol_stack  from   client_cdr20180614                where   time  between  '2018-06-04 03:00:00 +00'  and  '2018-06-17 23:59:59 +00'             	          	       	    and case  when call_duration is null then 0  else call_duration end>0         	               	      and ingress_client_id=268     and
+(exists(SELECT id FROM users_limit WHERE user_id = 1 AND client_id=client_cdr20180614.ingress_client_id) OR exists 
+(SELECT users.user_id FROM users LEFT JOIN sys_role ON users.role_id = sys_role.role_id WHERE users.user_id = 1 
+and (role_name = 'admin' or sys_role.view_all = true)))     ) TO STDOUT WITH CSV HEADER 
+2018-06-15 03:00:00
+COPY (select trunk_id_termination,egress_bill_time,egress_cost,egress_rate,trunk_id_origination,ingress_client_bill_time,ingress_client_cost,ingress_client_rate,origination_destination_number,origination_source_number,first_release_dialogue,release_cause_from_protocol_stack,case when is_final_call = 0 then '-' else binary_value_of_release_cause_from_protocol_stack end as binary_value_of_release_cause_from_protocol_stack  from   client_cdr20180615                where   time  between  '2018-06-04 03:00:00 +00'  and  '2018-06-17 23:59:59 +00'             	          	       	    and case  when call_duration is null then 0  else call_duration end>0         	               	      and ingress_client_id=268     and
+(exists(SELECT id FROM users_limit WHERE user_id = 1 AND client_id=client_cdr20180615.ingress_client_id) OR exists 
+(SELECT users.user_id FROM users LEFT JOIN sys_role ON users.role_id = sys_role.role_id WHERE users.user_id = 1 
+and (role_name = 'admin' or sys_role.view_all = true)))     ) TO STDOUT WITH CSV HEADER 
+2018-06-16 03:00:00
+COPY (select trunk_id_termination,egress_bill_time,egress_cost,egress_rate,trunk_id_origination,ingress_client_bill_time,ingress_client_cost,ingress_client_rate,origination_destination_number,origination_source_number,first_release_dialogue,release_cause_from_protocol_stack,case when is_final_call = 0 then '-' else binary_value_of_release_cause_from_protocol_stack end as binary_value_of_release_cause_from_protocol_stack  from   client_cdr20180616                where   time  between  '2018-06-04 03:00:00 +00'  and  '2018-06-17 23:59:59 +00'             	          	       	    and case  when call_duration is null then 0  else call_duration end>0         	               	      and ingress_client_id=268     and
+(exists(SELECT id FROM users_limit WHERE user_id = 1 AND client_id=client_cdr20180616.ingress_client_id) OR exists 
+(SELECT users.user_id FROM users LEFT JOIN sys_role ON users.role_id = sys_role.role_id WHERE users.user_id = 1 
+and (role_name = 'admin' or sys_role.view_all = true)))     ) TO STDOUT WITH CSV HEADER 
+2018-06-17 03:00:00
+COPY (select trunk_id_termination,egress_bill_time,egress_cost,egress_rate,trunk_id_origination,ingress_client_bill_time,ingress_client_cost,ingress_client_rate,origination_destination_number,origination_source_number,first_release_dialogue,release_cause_from_protocol_stack,case when is_final_call = 0 then '-' else binary_value_of_release_cause_from_protocol_stack end as binary_value_of_release_cause_from_protocol_stack  from   client_cdr20180617                where   time  between  '2018-06-04 03:00:00 +00'  and  '2018-06-17 23:59:59 +00'             	          	       	    and case  when call_duration is null then 0  else call_duration end>0         	               	      and ingress_client_id=268     and
+(exists(SELECT id FROM users_limit WHERE user_id = 1 AND client_id=client_cdr20180617.ingress_client_id) OR exists 
+(SELECT users.user_id FROM users LEFT JOIN sys_role ON users.role_id = sys_role.role_id WHERE users.user_id = 1 
+and (role_name = 'admin' or sys_role.view_all = true)))     ) TO STDOUT WITH CSV HEADER 
+zip 10154bb2a84d-e5fa-41c2-83c7-f4a44de14fad.zip 1015_1530025923/*
+/opt/btb/teleinx/Class4/db_nfs_path/cdr_download/1015_1530025923
+14

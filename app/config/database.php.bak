@@ -1,0 +1,20 @@
+<?php
+
+class DATABASE_CONFIG
+{
+
+    var $default = array(
+        'driver' => 'postgres',
+        'persistent' => false,
+        'host' => '192.168.112.88',
+        'login' => 'class4_teleinx',
+        'password' => 'N43f8ds4Ir3',
+        'database' => 'class4_teleinx',
+        'prefix' => '',
+        'port' => '5432'
+    );
+
+
+}
+
+?>

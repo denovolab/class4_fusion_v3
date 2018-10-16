@@ -1,0 +1,1 @@
+<a href="javascript:void(0)" onclick="ss_clear_input_select(this);" ><img width="9" height="9" class="img-button" src="<?php echo $this->webroot?>images/delete-small.png"/></a>

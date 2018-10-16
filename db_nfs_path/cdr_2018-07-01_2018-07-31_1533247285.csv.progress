@@ -1,0 +1,101 @@
+/opt/btb/teleinx/Class4/etc/dnl_softswitch.ini
+chmod 777 failed
+start 2018-07-01 06:00:00  end 2018-08-01 05:59:59
+start 2018-07-01 06:00:00  end 2018-08-01 05:59:59
+/opt/btb/teleinx/Class4/db_nfs_path/cdr_download/1051_1533247286
+2018-07-01 06:00:00
+COPY (select trunk_id_origination,origination_source_number,origination_destination_number,origination_source_host_name,lrn_dnis,ingress_client_bill_time,ingress_client_cost,time  from   client_cdr20180701                where   time  between  '2018-07-01 06:00:00 +00'  and  '2018-08-01 05:59:59 +00'             	          	       	            	  and (ingress_client_id  = 461)              	               ) TO STDOUT WITH CSV HEADER 
+2018-07-02 06:00:00
+COPY (select trunk_id_origination,origination_source_number,origination_destination_number,origination_source_host_name,lrn_dnis,ingress_client_bill_time,ingress_client_cost,time  from   client_cdr20180702                where   time  between  '2018-07-01 06:00:00 +00'  and  '2018-08-01 05:59:59 +00'             	          	       	            	  and (ingress_client_id  = 461)              	               ) TO STDOUT WITH CSV HEADER 
+2018-07-03 06:00:00
+COPY (select trunk_id_origination,origination_source_number,origination_destination_number,origination_source_host_name,lrn_dnis,ingress_client_bill_time,ingress_client_cost,time  from   client_cdr20180703                where   time  between  '2018-07-01 06:00:00 +00'  and  '2018-08-01 05:59:59 +00'             	          	       	            	  and (ingress_client_id  = 461)              	               ) TO STDOUT WITH CSV HEADER 
+2018-07-04 06:00:00
+COPY (select trunk_id_origination,origination_source_number,origination_destination_number,origination_source_host_name,lrn_dnis,ingress_client_bill_time,ingress_client_cost,time  from   client_cdr20180704                where   time  between  '2018-07-01 06:00:00 +00'  and  '2018-08-01 05:59:59 +00'             	          	       	            	  and (ingress_client_id  = 461)              	               ) TO STDOUT WITH CSV HEADER 
+2018-07-05 06:00:00
+COPY (select trunk_id_origination,origination_source_number,origination_destination_number,origination_source_host_name,lrn_dnis,ingress_client_bill_time,ingress_client_cost,time  from   client_cdr20180705                where   time  between  '2018-07-01 06:00:00 +00'  and  '2018-08-01 05:59:59 +00'             	          	       	            	  and (ingress_client_id  = 461)              	               ) TO STDOUT WITH CSV HEADER 
+2018-07-06 06:00:00
+COPY (select trunk_id_origination,origination_source_number,origination_destination_number,origination_source_host_name,lrn_dnis,ingress_client_bill_time,ingress_client_cost,time  from   client_cdr20180706                where   time  between  '2018-07-01 06:00:00 +00'  and  '2018-08-01 05:59:59 +00'             	          	       	            	  and (ingress_client_id  = 461)              	               ) TO STDOUT WITH CSV HEADER 
+2018-07-07 06:00:00
+COPY (select trunk_id_origination,origination_source_number,origination_destination_number,origination_source_host_name,lrn_dnis,ingress_client_bill_time,ingress_client_cost,time  from   client_cdr20180707                where   time  between  '2018-07-01 06:00:00 +00'  and  '2018-08-01 05:59:59 +00'             	          	       	            	  and (ingress_client_id  = 461)              	               ) TO STDOUT WITH CSV HEADER 
+2018-07-08 06:00:00
+COPY (select trunk_id_origination,origination_source_number,origination_destination_number,origination_source_host_name,lrn_dnis,ingress_client_bill_time,ingress_client_cost,time  from   client_cdr20180708                where   time  between  '2018-07-01 06:00:00 +00'  and  '2018-08-01 05:59:59 +00'             	          	       	            	  and (ingress_client_id  = 461)              	               ) TO STDOUT WITH CSV HEADER 
+2018-07-09 06:00:00
+COPY (select trunk_id_origination,origination_source_number,origination_destination_number,origination_source_host_name,lrn_dnis,ingress_client_bill_time,ingress_client_cost,time  from   client_cdr20180709                where   time  between  '2018-07-01 06:00:00 +00'  and  '2018-08-01 05:59:59 +00'             	          	       	            	  and (ingress_client_id  = 461)              	               ) TO STDOUT WITH CSV HEADER 
+2018-07-10 06:00:00
+COPY (select trunk_id_origination,origination_source_number,origination_destination_number,origination_source_host_name,lrn_dnis,ingress_client_bill_time,ingress_client_cost,time  from   client_cdr20180710                where   time  between  '2018-07-01 06:00:00 +00'  and  '2018-08-01 05:59:59 +00'             	          	       	            	  and (ingress_client_id  = 461)              	               ) TO STDOUT WITH CSV HEADER 
+2018-07-11 06:00:00
+COPY (select trunk_id_origination,origination_source_number,origination_destination_number,origination_source_host_name,lrn_dnis,ingress_client_bill_time,ingress_client_cost,time  from   client_cdr20180711                where   time  between  '2018-07-01 06:00:00 +00'  and  '2018-08-01 05:59:59 +00'             	          	       	            	  and (ingress_client_id  = 461)              	               ) TO STDOUT WITH CSV HEADER 
+2018-07-12 06:00:00
+COPY (select trunk_id_origination,origination_source_number,origination_destination_number,origination_source_host_name,lrn_dnis,ingress_client_bill_time,ingress_client_cost,time  from   client_cdr20180712                where   time  between  '2018-07-01 06:00:00 +00'  and  '2018-08-01 05:59:59 +00'             	          	       	            	  and (ingress_client_id  = 461)              	               ) TO STDOUT WITH CSV HEADER 
+2018-07-13 06:00:00
+COPY (select trunk_id_origination,origination_source_number,origination_destination_number,origination_source_host_name,lrn_dnis,ingress_client_bill_time,ingress_client_cost,time  from   client_cdr20180713                where   time  between  '2018-07-01 06:00:00 +00'  and  '2018-08-01 05:59:59 +00'             	          	       	            	  and (ingress_client_id  = 461)              	               ) TO STDOUT WITH CSV HEADER 
+2018-07-14 06:00:00
+COPY (select trunk_id_origination,origination_source_number,origination_destination_number,origination_source_host_name,lrn_dnis,ingress_client_bill_time,ingress_client_cost,time  from   client_cdr20180714                where   time  between  '2018-07-01 06:00:00 +00'  and  '2018-08-01 05:59:59 +00'             	          	       	            	  and (ingress_client_id  = 461)              	               ) TO STDOUT WITH CSV HEADER 
+2018-07-15 06:00:00
+COPY (select trunk_id_origination,origination_source_number,origination_destination_number,origination_source_host_name,lrn_dnis,ingress_client_bill_time,ingress_client_cost,time  from   client_cdr20180715                where   time  between  '2018-07-01 06:00:00 +00'  and  '2018-08-01 05:59:59 +00'             	          	       	            	  and (ingress_client_id  = 461)              	               ) TO STDOUT WITH CSV HEADER 
+2018-07-16 06:00:00
+COPY (select trunk_id_origination,origination_source_number,origination_destination_number,origination_source_host_name,lrn_dnis,ingress_client_bill_time,ingress_client_cost,time  from   client_cdr20180716                where   time  between  '2018-07-01 06:00:00 +00'  and  '2018-08-01 05:59:59 +00'             	          	       	            	  and (ingress_client_id  = 461)              	               ) TO STDOUT WITH CSV HEADER 
+2018-07-17 06:00:00
+COPY (select trunk_id_origination,origination_source_number,origination_destination_number,origination_source_host_name,lrn_dnis,ingress_client_bill_time,ingress_client_cost,time  from   client_cdr20180717                where   time  between  '2018-07-01 06:00:00 +00'  and  '2018-08-01 05:59:59 +00'             	          	       	            	  and (ingress_client_id  = 461)              	               ) TO STDOUT WITH CSV HEADER 
+2018-07-18 06:00:00
+COPY (select trunk_id_origination,origination_source_number,origination_destination_number,origination_source_host_name,lrn_dnis,ingress_client_bill_time,ingress_client_cost,time  from   client_cdr20180718                where   time  between  '2018-07-01 06:00:00 +00'  and  '2018-08-01 05:59:59 +00'             	          	       	            	  and (ingress_client_id  = 461)              	               ) TO STDOUT WITH CSV HEADER   adding: 1051_1533247286/20180701.csv (deflated 73%)
+  adding: 1051_1533247286/20180702.csv (deflated 93%)
+  adding: 1051_1533247286/20180703.csv (deflated 93%)
+  adding: 1051_1533247286/20180704.csv (deflated 92%)
+  adding: 1051_1533247286/20180705.csv (deflated 93%)
+  adding: 1051_1533247286/20180706.csv (deflated 93%)
+  adding: 1051_1533247286/20180707.csv (deflated 90%)
+  adding: 1051_1533247286/20180708.csv (deflated 80%)
+  adding: 1051_1533247286/20180709.csv (deflated 93%)
+  adding: 1051_1533247286/20180710.csv (deflated 93%)
+  adding: 1051_1533247286/20180711.csv (deflated 93%)
+  adding: 1051_1533247286/20180712.csv (deflated 93%)
+  adding: 1051_1533247286/20180713.csv (deflated 93%)
+  adding: 1051_1533247286/20180714.csv (deflated 77%)
+  adding: 1051_1533247286/20180715.csv (deflated 76%)
+  adding: 1051_1533247286/20180716.csv (deflated 93%)
+  adding: 1051_1533247286/20180717.csv (deflated 93%)
+  adding: 1051_1533247286/20180718.csv (deflated 93%)
+  adding: 1051_1533247286/20180719.csv (deflated 92%)
+  adding: 1051_1533247286/20180720.csv (deflated 92%)
+  adding: 1051_1533247286/20180721.csv (deflated 85%)
+  adding: 1051_1533247286/20180722.csv (deflated 79%)
+  adding: 1051_1533247286/20180723.csv (deflated 87%)
+  adding: 1051_1533247286/20180724.csv (deflated 47%)
+  adding: 1051_1533247286/20180725.csv (deflated 93%)
+  adding: 1051_1533247286/20180726.csv (deflated 94%)
+  adding: 1051_1533247286/20180727.csv (deflated 94%)
+  adding: 1051_1533247286/20180728.csv (deflated 75%)
+  adding: 1051_1533247286/20180729.csv (deflated 81%)
+  adding: 1051_1533247286/20180730.csv (deflated 93%)
+  adding: 1051_1533247286/20180731.csv (deflated 92%)
+
+2018-07-19 06:00:00
+COPY (select trunk_id_origination,origination_source_number,origination_destination_number,origination_source_host_name,lrn_dnis,ingress_client_bill_time,ingress_client_cost,time  from   client_cdr20180719                where   time  between  '2018-07-01 06:00:00 +00'  and  '2018-08-01 05:59:59 +00'             	          	       	            	  and (ingress_client_id  = 461)              	               ) TO STDOUT WITH CSV HEADER 
+2018-07-20 06:00:00
+COPY (select trunk_id_origination,origination_source_number,origination_destination_number,origination_source_host_name,lrn_dnis,ingress_client_bill_time,ingress_client_cost,time  from   client_cdr20180720                where   time  between  '2018-07-01 06:00:00 +00'  and  '2018-08-01 05:59:59 +00'             	          	       	            	  and (ingress_client_id  = 461)              	               ) TO STDOUT WITH CSV HEADER 
+2018-07-21 06:00:00
+COPY (select trunk_id_origination,origination_source_number,origination_destination_number,origination_source_host_name,lrn_dnis,ingress_client_bill_time,ingress_client_cost,time  from   client_cdr20180721                where   time  between  '2018-07-01 06:00:00 +00'  and  '2018-08-01 05:59:59 +00'             	          	       	            	  and (ingress_client_id  = 461)              	               ) TO STDOUT WITH CSV HEADER 
+2018-07-22 06:00:00
+COPY (select trunk_id_origination,origination_source_number,origination_destination_number,origination_source_host_name,lrn_dnis,ingress_client_bill_time,ingress_client_cost,time  from   client_cdr20180722                where   time  between  '2018-07-01 06:00:00 +00'  and  '2018-08-01 05:59:59 +00'             	          	       	            	  and (ingress_client_id  = 461)              	               ) TO STDOUT WITH CSV HEADER 
+2018-07-23 06:00:00
+COPY (select trunk_id_origination,origination_source_number,origination_destination_number,origination_source_host_name,lrn_dnis,ingress_client_bill_time,ingress_client_cost,time  from   client_cdr20180723                where   time  between  '2018-07-01 06:00:00 +00'  and  '2018-08-01 05:59:59 +00'             	          	       	            	  and (ingress_client_id  = 461)              	               ) TO STDOUT WITH CSV HEADER 
+2018-07-24 06:00:00
+COPY (select trunk_id_origination,origination_source_number,origination_destination_number,origination_source_host_name,lrn_dnis,ingress_client_bill_time,ingress_client_cost,time  from   client_cdr20180724                where   time  between  '2018-07-01 06:00:00 +00'  and  '2018-08-01 05:59:59 +00'             	          	       	            	  and (ingress_client_id  = 461)              	               ) TO STDOUT WITH CSV HEADER 
+2018-07-25 06:00:00
+COPY (select trunk_id_origination,origination_source_number,origination_destination_number,origination_source_host_name,lrn_dnis,ingress_client_bill_time,ingress_client_cost,time  from   client_cdr20180725                where   time  between  '2018-07-01 06:00:00 +00'  and  '2018-08-01 05:59:59 +00'             	          	       	            	  and (ingress_client_id  = 461)              	               ) TO STDOUT WITH CSV HEADER 
+2018-07-26 06:00:00
+COPY (select trunk_id_origination,origination_source_number,origination_destination_number,origination_source_host_name,lrn_dnis,ingress_client_bill_time,ingress_client_cost,time  from   client_cdr20180726                where   time  between  '2018-07-01 06:00:00 +00'  and  '2018-08-01 05:59:59 +00'             	          	       	            	  and (ingress_client_id  = 461)              	               ) TO STDOUT WITH CSV HEADER 
+2018-07-27 06:00:00
+COPY (select trunk_id_origination,origination_source_number,origination_destination_number,origination_source_host_name,lrn_dnis,ingress_client_bill_time,ingress_client_cost,time  from   client_cdr20180727                where   time  between  '2018-07-01 06:00:00 +00'  and  '2018-08-01 05:59:59 +00'             	          	       	            	  and (ingress_client_id  = 461)              	               ) TO STDOUT WITH CSV HEADER 
+2018-07-28 06:00:00
+COPY (select trunk_id_origination,origination_source_number,origination_destination_number,origination_source_host_name,lrn_dnis,ingress_client_bill_time,ingress_client_cost,time  from   client_cdr20180728                where   time  between  '2018-07-01 06:00:00 +00'  and  '2018-08-01 05:59:59 +00'             	          	       	            	  and (ingress_client_id  = 461)              	               ) TO STDOUT WITH CSV HEADER 
+2018-07-29 06:00:00
+COPY (select trunk_id_origination,origination_source_number,origination_destination_number,origination_source_host_name,lrn_dnis,ingress_client_bill_time,ingress_client_cost,time  from   client_cdr20180729                where   time  between  '2018-07-01 06:00:00 +00'  and  '2018-08-01 05:59:59 +00'             	          	       	            	  and (ingress_client_id  = 461)              	               ) TO STDOUT WITH CSV HEADER 
+2018-07-30 06:00:00
+COPY (select trunk_id_origination,origination_source_number,origination_destination_number,origination_source_host_name,lrn_dnis,ingress_client_bill_time,ingress_client_cost,time  from   client_cdr20180730                where   time  between  '2018-07-01 06:00:00 +00'  and  '2018-08-01 05:59:59 +00'             	          	       	            	  and (ingress_client_id  = 461)              	               ) TO STDOUT WITH CSV HEADER 
+2018-07-31 06:00:00
+COPY (select trunk_id_origination,origination_source_number,origination_destination_number,origination_source_host_name,lrn_dnis,ingress_client_bill_time,ingress_client_cost,time  from   client_cdr20180731                where   time  between  '2018-07-01 06:00:00 +00'  and  '2018-08-01 05:59:59 +00'             	          	       	            	  and (ingress_client_id  = 461)              	               ) TO STDOUT WITH CSV HEADER 
+zip 10519be8c9bf-58f9-459b-8925-059479ecb128.zip 1051_1533247286/*
+/opt/btb/teleinx/Class4/db_nfs_path/cdr_download/1051_1533247286
+31

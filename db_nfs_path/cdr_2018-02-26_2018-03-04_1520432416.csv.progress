@@ -1,0 +1,29 @@
+  adding: 953_1520432417/20180226.csv (deflated 84%)
+  adding: 953_1520432417/20180227.csv (deflated 84%)
+  adding: 953_1520432417/20180228.csv (deflated 84%)
+  adding: 953_1520432417/20180301.csv (deflated 84%)
+  adding: 953_1520432417/20180302.csv (deflated 84%)
+  adding: 953_1520432417/20180303.csv (deflated 85%)
+  adding: 953_1520432417/20180304.csv (deflated 88%)
+/opt/btb/teleinx/Class4/etc/dnl_softswitch.ini
+chmod 777 failed
+start 2018-02-26 00:00:00  end 2018-03-04 23:59:59
+start 2018-02-26 00:00:00  end 2018-03-04 23:59:59
+/opt/btb/teleinx/Class4/db_nfs_path/cdr_download/953_1520432417
+2018-02-26 00:00:00
+COPY (select origination_source_number,call_duration,time,lrn_dnis,ingress_client_cost  from   client_cdr20180226                where   time  between  '2018-02-26 00:00:00 +00'  and  '2018-03-04 23:59:59 +00'             	          	       	            	  and (ingress_client_id  = 166)              	               ) TO STDOUT WITH CSV HEADER 
+2018-02-27 00:00:00
+COPY (select origination_source_number,call_duration,time,lrn_dnis,ingress_client_cost  from   client_cdr20180227                where   time  between  '2018-02-26 00:00:00 +00'  and  '2018-03-04 23:59:59 +00'             	          	       	            	  and (ingress_client_id  = 166)              	               ) TO STDOUT WITH CSV HEADER 
+2018-02-28 00:00:00
+COPY (select origination_source_number,call_duration,time,lrn_dnis,ingress_client_cost  from   client_cdr20180228                where   time  between  '2018-02-26 00:00:00 +00'  and  '2018-03-04 23:59:59 +00'             	          	       	            	  and (ingress_client_id  = 166)              	               ) TO STDOUT WITH CSV HEADER 
+2018-03-01 00:00:00
+COPY (select origination_source_number,call_duration,time,lrn_dnis,ingress_client_cost  from   client_cdr20180301                where   time  between  '2018-02-26 00:00:00 +00'  and  '2018-03-04 23:59:59 +00'             	          	       	            	  and (ingress_client_id  = 166)              	               ) TO STDOUT WITH CSV HEADER 
+2018-03-02 00:00:00
+COPY (select origination_source_number,call_duration,time,lrn_dnis,ingress_client_cost  from   client_cdr20180302                where   time  between  '2018-02-26 00:00:00 +00'  and  '2018-03-04 23:59:59 +00'             	          	       	            	  and (ingress_client_id  = 166)              	               ) TO STDOUT WITH CSV HEADER 
+2018-03-03 00:00:00
+COPY (select origination_source_number,call_duration,time,lrn_dnis,ingress_client_cost  from   client_cdr20180303                where   time  between  '2018-02-26 00:00:00 +00'  and  '2018-03-04 23:59:59 +00'             	          	       	            	  and (ingress_client_id  = 166)              	               ) TO STDOUT WITH CSV HEADER 
+2018-03-04 00:00:00
+COPY (select origination_source_number,call_duration,time,lrn_dnis,ingress_client_cost  from   client_cdr20180304                where   time  between  '2018-02-26 00:00:00 +00'  and  '2018-03-04 23:59:59 +00'             	          	       	            	  and (ingress_client_id  = 166)              	               ) TO STDOUT WITH CSV HEADER 
+zip 95352478bf8-c452-4c3a-9eba-4e6cb959f682.zip 953_1520432417/*
+/opt/btb/teleinx/Class4/db_nfs_path/cdr_download/953_1520432417
+7

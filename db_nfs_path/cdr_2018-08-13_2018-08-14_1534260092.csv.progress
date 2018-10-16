@@ -1,0 +1,20 @@
+  adding: 1054_1534260093/20180813.csv (deflated 79%)
+  adding: 1054_1534260093/20180814.csv (deflated 79%)
+/opt/btb/teleinx/Class4/etc/dnl_softswitch.ini
+chmod 777 failed
+start 2018-08-13 00:00:00  end 2018-08-14 23:59:59
+start 2018-08-13 00:00:00  end 2018-08-14 00:00:00
+/opt/btb/teleinx/Class4/db_nfs_path/cdr_download/1054_1534260093
+2018-08-13 00:00:00
+COPY (select call_duration,ingress_client_bill_time,origination_destination_number,origination_source_number,first_release_dialogue,time  from   client_cdr20180813                where   time  between  '2018-08-13 00:00:00 +00'  and  '2018-08-14 23:59:59 +00'             	          	       	    and case  when call_duration is null then 0  else call_duration end>0         	               	      and ingress_client_id=511     and
+(exists(SELECT id FROM users_limit WHERE user_id = 1 AND client_id=client_cdr20180813.ingress_client_id) OR exists 
+(SELECT users.user_id FROM users LEFT JOIN sys_role ON users.role_id = sys_role.role_id WHERE users.user_id = 1 
+and (role_name = 'admin' or sys_role.view_all = true)))     ) TO STDOUT WITH CSV HEADER 
+2018-08-14 00:00:00
+COPY (select call_duration,ingress_client_bill_time,origination_destination_number,origination_source_number,first_release_dialogue,time  from   client_cdr20180814                where   time  between  '2018-08-13 00:00:00 +00'  and  '2018-08-14 23:59:59 +00'             	          	       	    and case  when call_duration is null then 0  else call_duration end>0         	               	      and ingress_client_id=511     and
+(exists(SELECT id FROM users_limit WHERE user_id = 1 AND client_id=client_cdr20180814.ingress_client_id) OR exists 
+(SELECT users.user_id FROM users LEFT JOIN sys_role ON users.role_id = sys_role.role_id WHERE users.user_id = 1 
+and (role_name = 'admin' or sys_role.view_all = true)))     ) TO STDOUT WITH CSV HEADER 
+zip 1054f51c9390-a86f-4161-97f6-992d8293155d.zip 1054_1534260093/*
+/opt/btb/teleinx/Class4/db_nfs_path/cdr_download/1054_1534260093
+2

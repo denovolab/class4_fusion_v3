@@ -1,0 +1,6 @@
+insert into ratetable1298027960 (rate_table_name, code, rate, setup_fee, effective_date, end_date, min_time, grace_time, interval, time_profile_name, seconds, code_name, intra_rate, inter_rate, local_rate) values ('ratetable1298027960', '666', '20.0000000000', '0.0000000000', '2010-12-25 23:00:00+00', '', '1', '0', '1', '7888', '60', '', '0.00000', '0.00000', '0.0000000000')
+
+Warning: pg_query(): Query failed: ERROR:  column "rate_table_name" of relation "ratetable1298027960" does not exist at character 34 in /opt/lampp/htdocs/client/exchange/app/csv2sql.php on line 191
+insert into ratetable1298027960 (rate_table_name, code, rate, setup_fee, effective_date, end_date, min_time, grace_time, interval, time_profile_name, seconds, code_name, intra_rate, inter_rate, local_rate) values ('ratetable1298027960', '888', '20.0000000000', '0.0000000000', '2010-12-25 23:00:00+00', '', '1', '0', '1', 'all_time', '60', '', '0.00000', '0.00000', '0.0000000000')
+
+Warning: pg_query(): Query failed: ERROR:  column "rate_table_name" of relation "ratetable1298027960" does not exist at character 34 in /opt/lampp/htdocs/client/exchange/app/csv2sql.php on line 191

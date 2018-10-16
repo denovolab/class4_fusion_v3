@@ -1,0 +1,14 @@
+  adding: 1019_1530550240/20180702.csv (deflated 79%)
+/opt/btb/teleinx/Class4/etc/dnl_softswitch.ini
+chmod 777 failed
+start 2018-07-02 00:00:00  end 2018-07-02 23:59:59
+start 2018-07-02 00:00:00  end 2018-07-02 00:00:00
+/opt/btb/teleinx/Class4/db_nfs_path/cdr_download/1019_1530550240
+2018-07-02 00:00:00
+COPY (select trunk_id_termination,origination_source_number,pdd,release_cause_from_protocol_stack,termination_destination_number,time,routing_digits  from   client_cdr20180702                where   time  between  '2018-07-02 00:00:00 +00'  and  '2018-07-02 23:59:59 +00'             	            and egress_id=473	       	  and binary_value_of_release_cause_from_protocol_stack  like'%200%'    and ingress_client_cost=0.000        	               	          and
+(exists(SELECT id FROM users_limit WHERE user_id = 1 AND client_id=client_cdr20180702.ingress_client_id) OR exists 
+(SELECT users.user_id FROM users LEFT JOIN sys_role ON users.role_id = sys_role.role_id WHERE users.user_id = 1 
+and (role_name = 'admin' or sys_role.view_all = true)))     ) TO STDOUT WITH CSV HEADER 
+zip 1019fb50b720-9fb9-48bd-8b11-fe28e8485bc2.zip 1019_1530550240/*
+/opt/btb/teleinx/Class4/db_nfs_path/cdr_download/1019_1530550240
+1

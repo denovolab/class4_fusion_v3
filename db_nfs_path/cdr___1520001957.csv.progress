@@ -1,0 +1,14 @@
+/opt/btb/teleinx/Class4/etc/dnl_softswitch.ini
+chmod 777 failed
+Traceback (most recent call last):
+  File "/opt/btb/teleinx/Class4/script/class4_cdr_export.py", line 263, in <module>
+    main()
+  File "/opt/btb/teleinx/Class4/script/class4_cdr_export.py", line 260, in main
+    export_cdr(args.log_id, config)
+  File "/opt/btb/teleinx/Class4/script/class4_cdr_export.py", line 59, in export_cdr
+    cdr_start = datetime.datetime.strptime(str(cdr_export_log['cdr_start_time'])[0:19], "%Y-%m-%d %H:%M:%S")
+  File "/usr/local/lib/python3.5/_strptime.py", line 510, in _strptime_datetime
+    tt, fraction = _strptime(data_string, format)
+  File "/usr/local/lib/python3.5/_strptime.py", line 343, in _strptime
+    (data_string, format))
+ValueError: time data 'None' does not match format '%Y-%m-%d %H:%M:%S'

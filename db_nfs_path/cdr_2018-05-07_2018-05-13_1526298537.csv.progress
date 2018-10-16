@@ -1,0 +1,29 @@
+  adding: 1001_1526298537/20180507.csv (deflated 95%)
+  adding: 1001_1526298537/20180508.csv (deflated 95%)
+  adding: 1001_1526298537/20180509.csv (deflated 95%)
+  adding: 1001_1526298537/20180510.csv (deflated 95%)
+  adding: 1001_1526298537/20180511.csv (deflated 95%)
+  adding: 1001_1526298537/20180512.csv (deflated 94%)
+  adding: 1001_1526298537/20180513.csv (deflated 94%)
+/opt/btb/teleinx/Class4/etc/dnl_softswitch.ini
+chmod 777 failed
+start 2018-05-07 00:00:00  end 2018-05-13 23:59:59
+start 2018-05-07 00:00:00  end 2018-05-13 23:59:59
+/opt/btb/teleinx/Class4/db_nfs_path/cdr_download/1001_1526298537
+2018-05-07 00:00:00
+COPY (select trunk_id_origination,origination_source_number,origination_destination_number,origination_source_host_name,lrn_dnis,ingress_client_bill_time,ingress_client_cost,time  from   client_cdr20180507                where   time  between  '2018-05-07 00:00:00 +00'  and  '2018-05-13 23:59:59 +00'             	          	       	            	  and (ingress_client_id  = 432)              	               ) TO STDOUT WITH CSV HEADER 
+2018-05-08 00:00:00
+COPY (select trunk_id_origination,origination_source_number,origination_destination_number,origination_source_host_name,lrn_dnis,ingress_client_bill_time,ingress_client_cost,time  from   client_cdr20180508                where   time  between  '2018-05-07 00:00:00 +00'  and  '2018-05-13 23:59:59 +00'             	          	       	            	  and (ingress_client_id  = 432)              	               ) TO STDOUT WITH CSV HEADER 
+2018-05-09 00:00:00
+COPY (select trunk_id_origination,origination_source_number,origination_destination_number,origination_source_host_name,lrn_dnis,ingress_client_bill_time,ingress_client_cost,time  from   client_cdr20180509                where   time  between  '2018-05-07 00:00:00 +00'  and  '2018-05-13 23:59:59 +00'             	          	       	            	  and (ingress_client_id  = 432)              	               ) TO STDOUT WITH CSV HEADER 
+2018-05-10 00:00:00
+COPY (select trunk_id_origination,origination_source_number,origination_destination_number,origination_source_host_name,lrn_dnis,ingress_client_bill_time,ingress_client_cost,time  from   client_cdr20180510                where   time  between  '2018-05-07 00:00:00 +00'  and  '2018-05-13 23:59:59 +00'             	          	       	            	  and (ingress_client_id  = 432)              	               ) TO STDOUT WITH CSV HEADER 
+2018-05-11 00:00:00
+COPY (select trunk_id_origination,origination_source_number,origination_destination_number,origination_source_host_name,lrn_dnis,ingress_client_bill_time,ingress_client_cost,time  from   client_cdr20180511                where   time  between  '2018-05-07 00:00:00 +00'  and  '2018-05-13 23:59:59 +00'             	          	       	            	  and (ingress_client_id  = 432)              	               ) TO STDOUT WITH CSV HEADER 
+2018-05-12 00:00:00
+COPY (select trunk_id_origination,origination_source_number,origination_destination_number,origination_source_host_name,lrn_dnis,ingress_client_bill_time,ingress_client_cost,time  from   client_cdr20180512                where   time  between  '2018-05-07 00:00:00 +00'  and  '2018-05-13 23:59:59 +00'             	          	       	            	  and (ingress_client_id  = 432)              	               ) TO STDOUT WITH CSV HEADER 
+2018-05-13 00:00:00
+COPY (select trunk_id_origination,origination_source_number,origination_destination_number,origination_source_host_name,lrn_dnis,ingress_client_bill_time,ingress_client_cost,time  from   client_cdr20180513                where   time  between  '2018-05-07 00:00:00 +00'  and  '2018-05-13 23:59:59 +00'             	          	       	            	  and (ingress_client_id  = 432)              	               ) TO STDOUT WITH CSV HEADER 
+zip 1001f041e1e8-d344-403c-9208-921e33a15c10.zip 1001_1526298537/*
+/opt/btb/teleinx/Class4/db_nfs_path/cdr_download/1001_1526298537
+7

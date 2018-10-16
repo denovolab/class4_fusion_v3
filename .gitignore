@@ -1,0 +1,13 @@
+app/tmp/upload/csv/*.csv
+app/tmp/ftp/*
+app/tmp/cache/*
+app/webroot/upload/rates/*.csv
+app/webroot/upload/rates/*.xlsx
+app/webroot/upload/rates_log/*.csv
+app/webroot/upload/rates_log/*.xlsx
+app/webroot/upload/html/*.html
+app/webroot/upload/invoice_file/*.pdf
+app/tmp/logs/*.log
+app/tmp/upload/csv/*
+*.log
+

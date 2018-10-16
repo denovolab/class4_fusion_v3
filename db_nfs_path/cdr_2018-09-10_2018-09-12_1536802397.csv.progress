@@ -1,0 +1,26 @@
+  adding: 1062_1536802398/20180910.csv (deflated 36%)
+  adding: 1062_1536802398/20180911.csv (deflated 36%)
+  adding: 1062_1536802398/20180912.csv (deflated 36%)
+/opt/btb/teleinx/Class4/etc/dnl_softswitch.ini
+chmod 777 failed
+start 2018-09-10 00:00:00  end 2018-09-12 23:59:59
+start 2018-09-10 00:00:00  end 2018-09-12 23:59:59
+/opt/btb/teleinx/Class4/db_nfs_path/cdr_download/1062_1536802398
+2018-09-10 00:00:00
+COPY (select trunk_id_termination,egress_bill_time,egress_cost,egress_rate,origination_source_number,release_cause_from_protocol_stack,termination_remote_payload_ip_address,time,routing_digits  from   client_cdr20180910                where   time  between  '2018-09-10 00:00:00 +00'  and  '2018-09-12 23:59:59 +00'             	          	       	 and release_cause_from_protocol_stack  like'%5000%'     and ingress_client_cost>0        	               	        and egress_client_id=20   and
+(exists(SELECT id FROM users_limit WHERE user_id = 1 AND client_id=client_cdr20180910.ingress_client_id) OR exists 
+(SELECT users.user_id FROM users LEFT JOIN sys_role ON users.role_id = sys_role.role_id WHERE users.user_id = 1 
+and (role_name = 'admin' or sys_role.view_all = true)))     ) TO STDOUT WITH CSV HEADER 
+2018-09-11 00:00:00
+COPY (select trunk_id_termination,egress_bill_time,egress_cost,egress_rate,origination_source_number,release_cause_from_protocol_stack,termination_remote_payload_ip_address,time,routing_digits  from   client_cdr20180911                where   time  between  '2018-09-10 00:00:00 +00'  and  '2018-09-12 23:59:59 +00'             	          	       	 and release_cause_from_protocol_stack  like'%5000%'     and ingress_client_cost>0        	               	        and egress_client_id=20   and
+(exists(SELECT id FROM users_limit WHERE user_id = 1 AND client_id=client_cdr20180911.ingress_client_id) OR exists 
+(SELECT users.user_id FROM users LEFT JOIN sys_role ON users.role_id = sys_role.role_id WHERE users.user_id = 1 
+and (role_name = 'admin' or sys_role.view_all = true)))     ) TO STDOUT WITH CSV HEADER 
+2018-09-12 00:00:00
+COPY (select trunk_id_termination,egress_bill_time,egress_cost,egress_rate,origination_source_number,release_cause_from_protocol_stack,termination_remote_payload_ip_address,time,routing_digits  from   client_cdr20180912                where   time  between  '2018-09-10 00:00:00 +00'  and  '2018-09-12 23:59:59 +00'             	          	       	 and release_cause_from_protocol_stack  like'%5000%'     and ingress_client_cost>0        	               	        and egress_client_id=20   and
+(exists(SELECT id FROM users_limit WHERE user_id = 1 AND client_id=client_cdr20180912.ingress_client_id) OR exists 
+(SELECT users.user_id FROM users LEFT JOIN sys_role ON users.role_id = sys_role.role_id WHERE users.user_id = 1 
+and (role_name = 'admin' or sys_role.view_all = true)))     ) TO STDOUT WITH CSV HEADER 
+zip 1062e0e92f73-8b5f-4aec-bb08-d1e61ac593cc.zip 1062_1536802398/*
+/opt/btb/teleinx/Class4/db_nfs_path/cdr_download/1062_1536802398
+3

@@ -1,0 +1,104 @@
+/opt/btb/teleinx/Class4/etc/dnl_softswitch.ini
+chmod 777 failed
+start 2018-03-26 00:00:00  end 2018-04-10 23:59:59
+start 2018-03-26 00:00:00  end 2018-04-10 00:00:00
+/opt/btb/teleinx/Class4/db_nfs_path/cdr_download/989_1523330847
+2018-03-26 00:00:00
+COPY (select egress_cost,egress_rate,egress_six_seconds,lrn_dnis,origination_source_number,time,routing_digits  from   client_cdr20180326                where   time  between  '2018-03-26 00:00:00 +00'  and  '2018-04-10 23:59:59 +00'             	            and egress_id=418	       	     and ingress_client_cost>0        	               	        and egress_client_id=297   and
+(exists(SELECT id FROM users_limit WHERE user_id = 1 AND client_id=client_cdr20180326.ingress_client_id) OR exists 
+(SELECT users.user_id FROM users LEFT JOIN sys_role ON users.role_id = sys_role.role_id WHERE users.user_id = 1 
+and (role_name = 'admin' or sys_role.view_all = true)))     ) TO STDOUT WITH CSV HEADER 
+2018-03-27 00:00:00
+COPY (select egress_cost,egress_rate,egress_six_seconds,lrn_dnis,origination_source_number,time,routing_digits  from   client_cdr20180327                where   time  between  '2018-03-26 00:00:00 +00'  and  '2018-04-10 23:59:59 +00'             	            and egress_id=418	       	     and ingress_client_cost>0        	               	        and egress_client_id=297   and
+(exists(SELECT id FROM users_limit WHERE user_id = 1 AND client_id=client_cdr20180327.ingress_client_id) OR exists 
+(SELECT users.user_id FROM users LEFT JOIN sys_role ON users.role_id = sys_role.role_id WHERE users.user_id = 1 
+and (role_name = 'admin' or sys_role.view_all = true)))     ) TO STDOUT WITH CSV HEADER 
+2018-03-28 00:00:00
+COPY (select egress_cost,egress_rate,egress_six_seconds,lrn_dnis,origination_source_number,time,routing_digits  from   client_cdr20180328                where   time  between  '2018-03-26 00:00:00 +00'  and  '2018-04-10 23:59:59 +00'             	            and egress_id=418	       	     and ingress_client_cost>0        	               	        and egress_client_id=297   and
+(exists(SELECT id FROM users_limit WHERE user_id = 1 AND client_id=client_cdr20180328.ingress_client_id) OR exists 
+(SELECT users.user_id FROM users LEFT JOIN sys_role ON users.role_id = sys_role.role_id WHERE users.user_id = 1 
+and (role_name = 'admin' or sys_role.view_all = true)))     ) TO STDOUT WITH CSV HEADER 
+2018-03-29 00:00:00
+COPY (select egress_cost,egress_rate,egress_six_seconds,lrn_dnis,origination_source_number,time,routing_digits  from   client_cdr20180329                where   time  between  '2018-03-26 00:00:00 +00'  and  '2018-04-10 23:59:59 +00'             	            and egress_id=418	       	     and ingress_client_cost>0        	               	        and egress_client_id=297   and
+(exists(SELECT id FROM users_limit WHERE user_id = 1 AND client_id=client_cdr20180329.ingress_client_id) OR exists 
+(SELECT users.user_id FROM users LEFT JOIN sys_role ON users.role_id = sys_role.role_id WHERE users.user_id = 1 
+and (role_name = 'admin' or sys_role.view_all = true)))     ) TO STDOUT WITH CSV HEADER 
+2018-03-30 00:00:00
+COPY (select egress_cost,egress_rate,egress_six_seconds,lrn_dnis,origination_source_number,time,routing_digits  from   client_cdr20180330                where   time  between  '2018-03-26 00:00:00 +00'  and  '2018-04-10 23:59:59 +00'             	            and egress_id=418	       	     and ingress_client_cost>0        	               	        and egress_client_id=297   and
+(exists(SELECT id FROM users_limit WHERE user_id = 1 AND client_id=client_cdr20180330.ingress_client_id) OR exists 
+(SELECT users.user_id FROM users LEFT JOIN sys_role ON users.role_id = sys_role.role_id WHERE users.user_id = 1 
+and (role_name = 'admin' or sys_role.view_all = true)))     ) TO STDOUT WITH CSV HEADER 
+2018-03-31 00:00:00
+COPY (select egress_cost,egress_rate,egress_six_seconds,lrn_dnis,origination_source_number,time,routing_digits  from   client_cdr20180331                where   time  between  '2018-03-26 00:00:00 +00'  and  '2018-04-10 23:59:59 +00'             	            and egress_id=418	       	     and ingress_client_cost>0        	               	        and egress_client_id=297   and
+(exists(SELECT id FROM users_limit WHERE user_id = 1 AND client_id=client_cdr20180331.ingress_client_id) OR exists 
+(SELECT users.user_id FROM users LEFT JOIN sys_role ON users.role_id = sys_role.role_id WHERE users.user_id = 1 
+and (role_name = 'admin' or sys_role.view_all = true)))     ) TO STDOUT WITH CSV HEADER 
+2018-04-01 00:00:00
+COPY (select egress_cost,egress_rate,egress_six_seconds,lrn_dnis,origination_source_number,time,routing_digits  from   client_cdr20180401                where   time  between  '2018-03-26 00:00:00 +00'  and  '2018-04-10 23:59:59 +00'             	            and egress_id=418	       	     and ingress_client_cost>0        	               	        and egress_client_id=297   and
+(exists(SELECT id FROM users_limit WHERE user_id = 1 AND client_id=client_cdr20180401.ingress_client_id) OR exists 
+(SELECT users.user_id FROM users LEFT JOIN sys_role ON users.role_id = sys_role.role_id WHERE users.user_id = 1 
+and (role_name = 'admin' or sys_role.view_all = true)))     ) TO STDOUT WITH CSV HEADER 
+2018-04-02 00:00:00
+COPY (select egress_cost,egress_rate,egress_six_seconds,lrn_dnis,origination_source_number,time,routing_digits  from   client_cdr20180402                where   time  between  '2018-03-26 00:00:00 +00'  and  '2018-04-10 23:59:59 +00'             	            and egress_id=418	       	     and ingress_client_cost>0        	               	        and egress_client_id=297   and
+(exists(SELECT id FROM users_limit WHERE user_id = 1 AND client_id=client_cdr20180402.ingress_client_id) OR exists 
+(SELECT users.user_id FROM users LEFT JOIN sys_role ON users.role_id = sys_role.role_id WHERE users.user_id = 1 
+and (role_name = 'admin' or sys_role.view_all = true)))     ) TO STDOUT WITH CSV HEADER 
+2018-04-03 00:00:00
+COPY (select egress_cost,egress_rate,egress_six_seconds,lrn_dnis,origination_source_number,time,routing_digits  from   client_cdr20180403                where   time  between  '2018-03-26 00:00:00 +00'  and  '2018-04-10 23:59:59 +00'             	            and egress_id=418	       	     and ingress_client_cost>0        	               	        and egress_client_id=297   and
+(exists(SELECT id FROM users_limit WHERE user_id = 1 AND client_id=client_cdr20180403.ingress_client_id) OR exists 
+(SELECT users.user_id FROM users LEFT JOIN sys_role ON users.role_id = sys_role.role_id WHERE users.user_id = 1 
+and (role_name = 'admin' or sys_role.view_all = true)))     ) TO STDOUT WITH CSV HEADER 
+2018-04-04 00:00:00
+COPY (select egress_cost,egress_rate,egress_six_seconds,lrn_dnis,origination_source_number,time,routing_digits  from   client_cdr20180404                where   time  between  '2018-03-26 00:00:00 +00'  and  '2018-04-10 23:59:59 +00'             	            and egress_id=418	       	     and ingress_client_cost>0        	               	        and egress_client_id=297   and
+(exists(SELECT id FROM users_limit WHERE user_id = 1 AND client_id=client_cdr20180404.ingress_client_id) OR exists 
+(SELECT users.user_id FROM users LEFT JOIN sys_role ON users.role_id = sys_role.role_id WHERE users.user_id = 1 
+and (role_name = 'admin' or sys_role.view_all = true)))     ) TO STDOUT WITH CSV HEADER 
+2018-04-05 00:00:00
+COPY (select egress_cost,egress_rate,egress_six_seconds,lrn_dnis,origination_source_number,time,routing_digits  from   client_cdr20180405                where   time  between  '2018-03-26 00:00:00 +00'  and  '2018-04-10 23:59:59 +00'             	            and egress_id=418	       	     and ingress_client_cost>0        	               	        and egress_client_id=297   and
+(exists(SELECT id FROM users_limit WHERE user_id = 1 AND client_id=client_cdr20180405.ingress_client_id) OR exists 
+(SELECT users.user_id FROM users LEFT JOIN sys_role ON users.role_id = sys_role.role_id WHERE users.user_id = 1 
+and (role_name = 'admin' or sys_role.view_all = true)))     ) TO STDOUT WITH CSV HEADER 
+2018-04-06 00:00:00
+COPY (select egress_cost,egress_rate,egress_six_seconds,lrn_dnis,origination_source_number,time,routing_digits  from   client_cdr20180406                where   time  between  '2018-03-26 00:00:00 +00'  and  '2018-04-10 23:59:59 +00'             	            and egress_id=418	       	     and ingress_client_cost>0        	               	        and egress_client_id=297   and
+(exists(SELECT id FROM users_limit WHERE user_id = 1 AND client_id=client_cdr20180406.ingress_client_id) OR exists 
+(SELECT users.user_id FROM users LEFT JOIN sys_role ON users.role_id = sys_role.role_id WHERE users.user_id = 1 
+and (role_name = 'admin' or sys_role.view_all = true)))     ) TO STDOUT WITH CSV HEADER   adding: 989_1523330847/20180326.csv (deflated 78%)
+  adding: 989_1523330847/20180327.csv (deflated 79%)
+  adding: 989_1523330847/20180328.csv (deflated 80%)
+  adding: 989_1523330847/20180329.csv (deflated 78%)
+  adding: 989_1523330847/20180330.csv (deflated 78%)
+  adding: 989_1523330847/20180331.csv (deflated 79%)
+  adding: 989_1523330847/20180401.csv (deflated 77%)
+  adding: 989_1523330847/20180402.csv (deflated 77%)
+  adding: 989_1523330847/20180403.csv (deflated 78%)
+  adding: 989_1523330847/20180404.csv (deflated 78%)
+  adding: 989_1523330847/20180405.csv (deflated 79%)
+  adding: 989_1523330847/20180406.csv (deflated 80%)
+  adding: 989_1523330847/20180407.csv (deflated 78%)
+  adding: 989_1523330847/20180408.csv (deflated 79%)
+  adding: 989_1523330847/20180409.csv (deflated 77%)
+  adding: 989_1523330847/20180410.csv (deflated 81%)
+
+2018-04-07 00:00:00
+COPY (select egress_cost,egress_rate,egress_six_seconds,lrn_dnis,origination_source_number,time,routing_digits  from   client_cdr20180407                where   time  between  '2018-03-26 00:00:00 +00'  and  '2018-04-10 23:59:59 +00'             	            and egress_id=418	       	     and ingress_client_cost>0        	               	        and egress_client_id=297   and
+(exists(SELECT id FROM users_limit WHERE user_id = 1 AND client_id=client_cdr20180407.ingress_client_id) OR exists 
+(SELECT users.user_id FROM users LEFT JOIN sys_role ON users.role_id = sys_role.role_id WHERE users.user_id = 1 
+and (role_name = 'admin' or sys_role.view_all = true)))     ) TO STDOUT WITH CSV HEADER 
+2018-04-08 00:00:00
+COPY (select egress_cost,egress_rate,egress_six_seconds,lrn_dnis,origination_source_number,time,routing_digits  from   client_cdr20180408                where   time  between  '2018-03-26 00:00:00 +00'  and  '2018-04-10 23:59:59 +00'             	            and egress_id=418	       	     and ingress_client_cost>0        	               	        and egress_client_id=297   and
+(exists(SELECT id FROM users_limit WHERE user_id = 1 AND client_id=client_cdr20180408.ingress_client_id) OR exists 
+(SELECT users.user_id FROM users LEFT JOIN sys_role ON users.role_id = sys_role.role_id WHERE users.user_id = 1 
+and (role_name = 'admin' or sys_role.view_all = true)))     ) TO STDOUT WITH CSV HEADER 
+2018-04-09 00:00:00
+COPY (select egress_cost,egress_rate,egress_six_seconds,lrn_dnis,origination_source_number,time,routing_digits  from   client_cdr20180409                where   time  between  '2018-03-26 00:00:00 +00'  and  '2018-04-10 23:59:59 +00'             	            and egress_id=418	       	     and ingress_client_cost>0        	               	        and egress_client_id=297   and
+(exists(SELECT id FROM users_limit WHERE user_id = 1 AND client_id=client_cdr20180409.ingress_client_id) OR exists 
+(SELECT users.user_id FROM users LEFT JOIN sys_role ON users.role_id = sys_role.role_id WHERE users.user_id = 1 
+and (role_name = 'admin' or sys_role.view_all = true)))     ) TO STDOUT WITH CSV HEADER 
+2018-04-10 00:00:00
+COPY (select egress_cost,egress_rate,egress_six_seconds,lrn_dnis,origination_source_number,time,routing_digits  from   client_cdr20180410                where   time  between  '2018-03-26 00:00:00 +00'  and  '2018-04-10 23:59:59 +00'             	            and egress_id=418	       	     and ingress_client_cost>0        	               	        and egress_client_id=297   and
+(exists(SELECT id FROM users_limit WHERE user_id = 1 AND client_id=client_cdr20180410.ingress_client_id) OR exists 
+(SELECT users.user_id FROM users LEFT JOIN sys_role ON users.role_id = sys_role.role_id WHERE users.user_id = 1 
+and (role_name = 'admin' or sys_role.view_all = true)))     ) TO STDOUT WITH CSV HEADER 
+zip 989e1c2a4a0-d5a2-4b4e-8ef4-343174df4fce.zip 989_1523330847/*
+/opt/btb/teleinx/Class4/db_nfs_path/cdr_download/989_1523330847
+16
